@@ -25,8 +25,8 @@ RUN npm install -g serve
 # Copy build output from the previous stage
 COPY --from=build /app/dist ./dist
 
-# Expose port 3056
-EXPOSE 3056
+# Expose port 3088
+EXPOSE 3088
 
-# Use 'serve' to serve the build on port 3056
-CMD ["serve", "-s", "dist", "-l", "3056"]
+# Use 'serve' to serve the build on port 3088
+CMD ["serve", "-s", "dist", "-l", "3088"]
